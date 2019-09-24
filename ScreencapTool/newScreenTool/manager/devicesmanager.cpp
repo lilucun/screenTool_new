@@ -262,6 +262,8 @@ void DevicesManager::httpUploadDevInfo()
         if (ret == 1) {
             //            qDebug() << "upload devInfo sucess";
         }
+
+        reply->deleteLater();
     });
 
 }
