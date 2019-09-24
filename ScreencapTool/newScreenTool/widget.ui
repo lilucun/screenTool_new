@@ -121,29 +121,6 @@ font: 75 14pt &quot;Aharoni&quot;;</string>
     <string>未连接服务器</string>
    </property>
   </widget>
-  <widget class="QScrollArea" name="scrollArea">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>190</y>
-     <width>120</width>
-     <height>80</height>
-    </rect>
-   </property>
-   <property name="widgetResizable">
-    <bool>true</bool>
-   </property>
-   <widget class="QWidget" name="scrollAreaWidgetContents">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>118</width>
-      <height>78</height>
-     </rect>
-    </property>
-   </widget>
-  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

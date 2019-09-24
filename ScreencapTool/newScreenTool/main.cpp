@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     // 设置编码
 //    QTextCodec::setCodecForLocale(QTextCodec::codecForName("UTF-8"));
-//    qInstallMessageHandler(qMyLog);// 回调函数 通过句柄注册 qInfo不会输出到文件
+    qInstallMessageHandler(qMyLog);// 回调函数 通过句柄注册 qInfo不会输出到文件
 
     QString program = QCoreApplication::applicationDirPath();
     QStringList parLit;
@@ -24,14 +24,6 @@ int main(int argc, char *argv[])
     qDebug() << fileinfo.filePath() << parLit;
     p->start(fileinfo.absoluteFilePath(), parLit);
 
-//    QString picPath;
-//    picPath.append(QCoreApplication::applicationDirPath());
-//    // get time
-
-//    picPath.append("/temp");
-//    QDir dir(picPath);
-//    if(!dir.exists())
-//        dir.mkdir(picPath);
 
     Widget w;
     w.show();

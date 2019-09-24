@@ -18,7 +18,6 @@ public:
         ADB_ERROR_OTHER // 其他错误
     };
 
-
     AdbProcess();
     ~AdbProcess();
     QString m_error_str;

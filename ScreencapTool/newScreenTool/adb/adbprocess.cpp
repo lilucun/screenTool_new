@@ -104,12 +104,7 @@ void  AdbProcess::execAdbCommod(const QString& serial, const QString& commd)
         tempCommd.append(commd);
 
         start(tempCommd);
-
     }
-
-//    if(status){
-//        write("adb devices");
-//    }
 }
 
 

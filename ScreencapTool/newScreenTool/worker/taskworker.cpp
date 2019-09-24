@@ -275,7 +275,7 @@ void TaskWorker::onDownThemeFinished(QNetworkReply *reply)
 
     do{
         // 小于1M
-        if (reply->bytesAvailable() < 1024*1024) {
+        if (reply->bytesAvailable() <= 0) {
 //            resultCode = TaskWorker::FAILED;
             qCritical() << "theme is less 1M";
         } else {
